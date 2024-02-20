@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Open Sans;
+  color: #354545;
+  background: linear-gradient(131deg, rgb(237, 244, 253), rgb(109, 150, 166));
+  ;
+  border-radius: 20px;
+}
+
+
+/* Excercise - 新增陰影 */
+.card {
+  width: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  background: #FDF6ED;
+  box-shadow: 0 2px 10px 0 #a2a2a2;
+  border-radius: 20px;
+}
+
+
+.color-background {
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://upload.cc/i1/2022/08/23/7KladF.jpg') center center;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Excercise  - 變圓形*/
+.color-background .avatar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.profile {
+  height: 330px;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ----- 使用者資訊 ----- */
+.user-info {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 25px;
+}
+
+/* Excercise - 調整文字顏色 */
+.user-info h1 {
+  font-size: 1.6em;
+  color: #6D96A6;
+  margin: 20px 0 0 0;
+}
+
+.user-info p {
+  font-size: 15px;
+  text-align: center;
+  margin: 15px 0 5px;
+}
+
+.user-info p.description {
+  padding: 0;
+  margin-top: 0;
+  font-size: 10px;
+  color: #808080;
+}
+
+/* ----- 聯絡我們 ----- */
+.call-to-action {
+  height: 20%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.call-to-action .cta-btn {
+  width: 150px;
+  height: 44px;
+  cursor: pointer;
+  padding: 2px 10px;
+  border: 2px solid #808080;
+  text-align: center;
+  font-size: 15px;
+  color: #808080;
+  background: #FDF6ED;
+  border-radius: 20px;
+}
+
+/* Excercise - 新增 button 樣式 */
+.call-to-action .cta-btn.resume {
+  border: none;
+  background-color: #6D96A6;
+  color: #F5F5F5;
+}
+
+/* ----- 媒體網站 ----- */
+.media-site {
+  height: 30%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.media-site ul {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+.media-site ul a {
+  color: #808080;
+}
+
+.media-site ul a:hover {
+  color: #6D96A6;
+}
+
+.media-site ul li {
+  line-height: 0;
+  font-size: 25px;
+}
+
+
+.card:hover {
+  transform: scale(1.02)
+}
